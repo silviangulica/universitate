@@ -1,0 +1,30 @@
+body {
+  background-color:#282828;
+  
+}
+
+
+header {
+  font-size: xx-large;
+  background-color: #424449;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.menu-row > a {
+  text-decoration: none;
+  margin-left:  10px;
+  margin-right: 10px;
+}
+
+.menu-row {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  color: white;
+}
+
+.orar {
+  color: black;
+  background-color: white;
+}
