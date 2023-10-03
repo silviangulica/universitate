@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap");
 
 * {
-  font-family: 'AR One Sans', sans-serif;
+  font-family: "AR One Sans", sans-serif;
 }
 
 body {
-  background-color:#282828;
+  background-color: #282828;
 }
-
 
 header {
   font-size: xx-large;
@@ -25,7 +24,7 @@ header {
   text-align: center;
   a {
     text-decoration: none;
-    margin-left:  10px;
+    margin-left: 10px;
     margin-right: 10px;
     padding: 0.3rem;
     border: 1px;
@@ -33,10 +32,13 @@ header {
     border-style: solid;
   }
   a:link {
-    color:black;
+    color: black;
   }
   a:visited {
     color: black;
+  }
+  a:hover {
+    background-color: rgb(0, 255, 110);
   }
 }
 
@@ -44,6 +46,10 @@ header {
   color: black;
   background-color: white;
   text-align: center;
+  margin-bottom: 30px;
+  td {
+    padding: 10px;
+  }
 }
 
 .orar-wrapper {
@@ -51,14 +57,66 @@ header {
   justify-content: center;
 }
 
-@media only screen and (max-width: 500px) {
-  .orar {
-    font-size: 12px;
+.prezentare {
+  color: white;
+  font-size: xx-large;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+  padding: 10px;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+  color: white;
+}
+.item3 {
+  grid-area: main;
+  color: white;
+  border-bottom: white;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+}
+.item4 {
+  grid-area: right;
+  color: white;
+  padding-left: 10px;
+  a:link {
+    color: white;
   }
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    background-color: rgb(0, 255, 110);
+  }
+}
+.item5 {
+  grid-area: footer;
+  color: white;
 }
 
 @media only screen and (max-width: 500px) {
   .orar {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-sub-row {
+    text-align: start;
+    a {
+    }
   }
 }
