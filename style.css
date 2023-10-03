@@ -112,8 +112,12 @@ header {
     font-size: 10px;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .menu-sub-row {
-    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-sub-row a {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
